@@ -4,6 +4,7 @@
 等级评分控件，支持填充渐变，支持设置颜色、调整大小等，支持监听点击事件
 
 ## 更新
+    3.1.1    修复星星进度显示精度问题
     3.1.0    更新至AndroidX；修复粗边框显示不全的问题
 
 ## gif
@@ -31,7 +32,7 @@
 * add the compile statement to your module's build.gradle:
 ```xml
     dependencies {
-        compile 'com.github.CB-ysx:CBRatingBar:3.0.1'
+        implementation 'com.cb:ratingbar:***'
     }
 ```
 
