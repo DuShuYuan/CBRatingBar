@@ -251,12 +251,16 @@ public class CBRatingBar extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-        float coverSize = (float) (width * starProgress * 1.0 / starMaxProgress);
+        float coverSize = 0;
+        float percent = starProgress * 1.0F / starMaxProgress;
         if (coverDir == CoverDir.topToBottom || coverDir == CoverDir.bottomToTop) {
-            coverSize = (float) (starSize * starProgress * 1.0 / starMaxProgress);
+            coverSize = starSize * percent;
+        } else {
+            // 计算间隔数
+            int coverStarCount = (int) Math.floor(starCount * percent);
+            // 覆盖的星星+间隔
+            coverSize = percent * starSize * starCount + coverStarCount * starSpace + starStrokeWidth;
         }
-
         //将已经填充了颜色的星星绘制到画布上
         canvas.drawBitmap(getCoverStarBitmap(coverSize), 0, 0, null);
         if (showStroke) {
