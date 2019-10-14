@@ -1,5 +1,5 @@
 # CBRatingBar
-[ ![Download](https://api.bintray.com/packages/dushuyuan/maven/CBRatingBar/images/download.svg?version=3.1.1) ](https://bintray.com/dushuyuan/maven/CBRatingBar/3.1.1/link)
+[![](https://jitpack.io/v/DuShuYuan/CBRatingBar.svg)](https://jitpack.io/#DuShuYuan/CBRatingBar)
 
 等级评分控件，支持填充渐变，支持设置颜色、调整大小等，支持监听点击事件
 
@@ -32,7 +32,7 @@
 * add the compile statement to your module's build.gradle:
 ```xml
     dependencies {
-        implementation 'com.cb:ratingbar:***'
+        implementation 'com.github.DuShuYuan:CBRatingBar:3.1.1'
     }
 ```
 
