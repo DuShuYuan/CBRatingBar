@@ -2,6 +2,7 @@
 [![](https://jitpack.io/v/DuShuYuan/CBRatingBar.svg)](https://jitpack.io/#DuShuYuan/CBRatingBar)
 
 等级评分控件，支持填充渐变，支持设置颜色、调整大小等，支持监听点击事件
+原作者项目地址 https://github.com/CB-ysx/CBRatingBar
 
 ## 更新
     3.1.1    修复星星进度显示精度问题
